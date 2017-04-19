@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		C5474B701EA6660400B3E01E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5474B6F1EA6660400B3E01E /* main.m */; };
 		C5474B731EA6660400B3E01E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5474B721EA6660400B3E01E /* AppDelegate.m */; };
-		C5474B761EA6660400B3E01E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5474B751EA6660400B3E01E /* ViewController.m */; };
+		C5474B761EA6660400B3E01E /* ButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5474B751EA6660400B3E01E /* ButtonViewController.m */; };
 		C5474B791EA6660400B3E01E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5474B771EA6660400B3E01E /* Main.storyboard */; };
 		C5474B7B1EA6660400B3E01E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5474B7A1EA6660400B3E01E /* Assets.xcassets */; };
 		C5474B7E1EA6660400B3E01E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5474B7C1EA6660400B3E01E /* LaunchScreen.storyboard */; };
@@ -39,8 +39,8 @@
 		C5474B6F1EA6660400B3E01E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C5474B711EA6660400B3E01E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C5474B721EA6660400B3E01E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C5474B741EA6660400B3E01E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C5474B751EA6660400B3E01E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C5474B741EA6660400B3E01E /* ButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonViewController.h; sourceTree = "<group>"; };
+		C5474B751EA6660400B3E01E /* ButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonViewController.m; sourceTree = "<group>"; };
 		C5474B781EA6660400B3E01E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C5474B7A1EA6660400B3E01E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5474B7D1EA6660400B3E01E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -103,8 +103,8 @@
 			children = (
 				C5474B711EA6660400B3E01E /* AppDelegate.h */,
 				C5474B721EA6660400B3E01E /* AppDelegate.m */,
-				C5474B741EA6660400B3E01E /* ViewController.h */,
-				C5474B751EA6660400B3E01E /* ViewController.m */,
+				C5474B741EA6660400B3E01E /* ButtonViewController.h */,
+				C5474B751EA6660400B3E01E /* ButtonViewController.m */,
 				C5474B771EA6660400B3E01E /* Main.storyboard */,
 				C5474B7A1EA6660400B3E01E /* Assets.xcassets */,
 				C5474B7C1EA6660400B3E01E /* LaunchScreen.storyboard */,
@@ -273,7 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5474B761EA6660400B3E01E /* ViewController.m in Sources */,
+				C5474B761EA6660400B3E01E /* ButtonViewController.m in Sources */,
 				C5474B731EA6660400B3E01E /* AppDelegate.m in Sources */,
 				C5474B701EA6660400B3E01E /* main.m in Sources */,
 			);
@@ -507,6 +507,7 @@
 				C5474B9A1EA6660400B3E01E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5474B9B1EA6660400B3E01E /* Build configuration list for PBXNativeTarget "IOSUIDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +516,7 @@
 				C5474B9D1EA6660400B3E01E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5474B9E1EA6660400B3E01E /* Build configuration list for PBXNativeTarget "IOSUIDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +525,7 @@
 				C5474BA01EA6660400B3E01E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
