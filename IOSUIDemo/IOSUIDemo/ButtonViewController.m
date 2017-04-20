@@ -7,7 +7,7 @@
 //
 
 #import "ButtonViewController.h"
-
+#import "MyButton.h"
 
 @implementation ButtonViewController
 
@@ -80,6 +80,26 @@
     [self.view addConstraint:buttonLayout];
     buttonLayout = [NSLayoutConstraint constraintWithItem:button_3 attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTop multiplier:1.0f constant:50.0f];
     [self.view addConstraint:buttonLayout];
+    
+    MyButton* button_4 = [[MyButton alloc]init];
+    [button_4 setTitle:@"Buttonyy4" forState:UIControlStateNormal];
+    [button_4 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [button_4 setImage:[UIImage imageNamed:@"button"] forState:UIControlStateNormal];
+    button_4.translatesAutoresizingMaskIntoConstraints = NO;
+    [button_4 sizeToFit];
+    [self.view addSubview:button_4];
+    button_4.backgroundColor = [UIColor greenColor];
+    button_4.layer.cornerRadius = 10.0f;
+    button_4.layer.masksToBounds = YES;
+    
+//    button_4.titleEdgeInsets = UIEdgeInsetsMake(5, 5, 5, 5);
+    
+    [button_4 addTarget:self action:@selector(onClicked:) forControlEvents:UIControlEventTouchUpInside];
+    buttonLayout = [NSLayoutConstraint constraintWithItem:button_4 attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:button_1 attribute:NSLayoutAttributeBottom multiplier:1.0f constant:50.0f];
+    [self.view addConstraint:buttonLayout];
+    
+//    buttonLayout = [NSLayoutConstraint constraintWithItem:button_4 attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0f constant:80.0f];
+//    [self.view addConstraint:buttonLayout];
     
 }
 
